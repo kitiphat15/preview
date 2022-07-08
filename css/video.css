@@ -1,0 +1,266 @@
+#main-content{
+	margin-bottom: 25px;
+}
+
+#content{
+	padding-bottom: 30px !important;
+}
+
+h2.title{
+	font-family: Aldo;
+	font-size: 8rem;
+  line-height: 2;
+}
+
+.slider-movie.slick-initialized{
+	opacity: 1;
+}
+
+.slider-movie .item{
+    padding: 2px;
+}
+
+.slider-movie .item-wrap{
+  padding: 1em 1em;
+  background: #fff;
+  text-align: center;
+}
+
+.slider-movie a{
+  position: relative;
+	display: block;
+}
+
+.slider-movie .thumb{
+  position: relative;
+}
+
+.slider-movie .thumb img{
+  width: 100%;
+}
+
+.slider-movie .thumb::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+}
+
+.slider-movie .icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+.slider-movie .icon span{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-movie .icon span::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -9px;
+  margin-left: -4px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 9px 0 9px 12px;
+  border-color: transparent #000000;
+  font-size: 0;
+}
+
+.slider-movie.no-slide-item2{
+  display: block;
+  opacity: 1;
+  zoom:1;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slider-movie.no-slide-item2 .item{
+  width: 50%;
+  float: left;
+}
+
+.slider-movie.no-slide-item {
+  display: block;
+  opacity: 1;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.mv-thumb li a{
+	width: 100%;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	text-decoration: noหne;
+	text-align: center;
+}
+
+.mv-thumb li{
+  display: inline-block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.mv-thumb li{
+	display: block;
+	opacity: 1;
+}
+
+.mv-thumb ul{
+  overflow: hidden;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+}
+
+.mv-thumb a img{
+  vertical-align: bottom;
+	width: 100%;
+}
+
+.mv-thumb .icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+.mv-thumb .icon span{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.mv-thumb .icon span::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -9px;
+  margin-left: -4px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 9px 0 9px 12px;
+  border-color: transparent #000000;
+  font-size: 0;
+}
+
+@media (max-width: 1119px) {
+	#main-content{
+		width: 90%;
+	}
+	h2.title{
+	  font-size: 5rem;
+		margin-left: 5%;
+	}
+	#main-content{
+		margin: 0;
+		padding: 0% 0 5%;
+		outline: 0;
+		border: 0;
+		width: 95%;
+		height: 100%;
+	}
+	#content{
+		padding-bottom: 11%;
+	}
+	.content-wrap{
+		width: 100% !important;
+	}
+	.slider-movie{
+		margin-left: 5%;
+	}
+	.slider-movie .item-wrap{
+    padding: 1.5em 1em;
+    }
+  .slider-movie .icon{
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    }
+  .slider-movie.no-slide-item2 .item{
+    width: 100%;
+    float: none;
+    margin-bottom: 3%;
+  }
+	.mv-thumb{
+		margin-left: 5%;
+	}
+	#content{
+		padding-bottom: 25px;
+	}
+}
+
+@media (max-width: 768px) {
+	h2.title{
+	  font-size: 5rem !important;
+	  line-height: 1.5;
+		text-align: left;
+	}
+	#main-content{
+		padding: 0 0 12%;
+		width: 95%;
+		height: 100%;
+	}
+	#content{
+		padding-bottom: 11%;
+	}
+	.content-wrap{
+		width: auto;
+	}
+	.slider-movie{
+		margin-left: 5%;
+	}
+	.slider-movie .item-wrap{
+    padding: 1.5em 1em;
+    }
+  .slider-movie .icon{
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+  }
+  .slider-movie.no-slide-item2 .item{
+    width: 100%;
+    float: none;
+    margin-bottom: 3%;
+  }
+	.mv-thumb{
+		margin-left: 5%;
+	}
+}
+
+@media (max-width: 450px) {
+	h2.title{
+		font-size: 3rem !important;
+	}
+	#main-content{
+		padding: 0 0 5%;
+	}
+}

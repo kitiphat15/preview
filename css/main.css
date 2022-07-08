@@ -1,0 +1,155 @@
+*{
+	min-height: 0%;
+	margin: 0;
+	padding: 0
+}
+
+#main-content img{
+	width: 100%;
+}
+
+#main-content .content-box{
+	display: block;
+	opacity: 1;
+}
+
+#about-cravity{
+	padding: 100px 0 100px;
+	background-color: #000;
+	color: #fff;
+}
+
+#about-cravity .about{
+	display: flex;
+}
+
+.about .details{
+	width: calc(100% - 500px);
+}
+
+h2.title{
+	font-family: Aldo;
+	font-size: 6rem;
+	margin-bottom: 3%;
+	letter-spacing: 0.2em;
+}
+
+.about .details p{
+	line-height: 1.5;
+	font-family: DIN, 'Nanum Gothic', sans-serif;
+	font-weight: normal;
+	font-size: 1.25rem;
+}
+
+.about .pic{
+	width: 500px;
+}
+
+.about .pic img{
+	width: 100%;
+	margin-left: 5%;
+}
+
+.box{
+	position: relative;
+	display: inline-block;
+	background: none;
+	font-family: DIN;
+	font-size: 1.5rem;
+	line-height: 2.5;
+	color: #ffffff !important;
+}
+
+a.box::after,
+a.box::before{
+	background-color: #ffffff;
+}
+
+.box::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	transition: .5s;
+	left: 0;
+	top: 0;
+	transform-origin: left;
+}
+
+.box::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	transition: .5s;
+	left: 0;
+	bottom: 0;
+	transform-origin: left;
+}
+
+a.box:hover::after,
+a.box:hover::before{
+	width: 150%;
+}
+
+#about-cravity{
+	background-image: url(../images/about-dec-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgb(#000000);
+	background-position: top, bottom;
+	background-blend-mode: overlay;
+	color: #ffffff;
+}
+
+@media (max-width: 1199px) {
+	.content-wrap{
+		width: 90% !important;
+	}
+	h2.title{
+		font-size: 4rem;
+	}
+}
+
+@media (max-width: 1039px) {
+	#about-cravity{
+		padding: 10% 0 10%;
+	}
+	.about .pic{
+		width: 50%;
+	}
+	.about .details{
+		width: 45%;
+	}
+}
+
+@media (max-width: 768px) {
+	#about-cravity .about{
+		display: block;
+	}
+	.about{
+		margin-bottom: 5%;
+	}
+	.about .photo{
+		width: 100%;
+	}
+	.about .details{
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	.about .title h2{
+		font-size: 3rem;
+	}
+	.about .details p{
+		font-size: 1rem;
+	}
+	.about .pic{
+		width: 100%;
+	}
+	.about .pic img{
+		margin-left: 0;
+	}
+	.box{
+		font-size: 1rem;
+	}
+}

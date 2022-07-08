@@ -1,0 +1,100 @@
+#main-content{
+	min-height: 100%
+}
+
+#content{
+	overflow: auto;
+	width: 100%;
+	padding-left: 0;
+	padding-bottom: 10% !important;
+	padding-top: 0;
+	padding-right: 0;
+}
+
+#main-content{
+	display: block;
+	opacity: 1;
+}
+
+article, section{
+	text-align: left;
+	display: block;
+}
+
+h2.title{
+	font-family: Aldo;
+	font-size: 8rem;
+  line-height: 2;
+}
+
+.profiles-members li img{
+	width: 100%;
+}
+
+.profiles-members li a{
+	width: 96%;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	text-decoration: none;
+	box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+.profiles-members li{
+  display: block;
+	width: 30%;
+	margin-bottom: 10px;
+	float: left;
+}
+
+.profiles-members ul{
+  overflow: hidden;
+	zoom: 1;
+}
+
+.profiles-members a img{
+  vertical-align: bottom;
+	transition: 0.4s;
+}
+
+.profiles-members a img:hover{
+	transition: 0.4s;
+	transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+	h2.title{
+	  font-size: 5rem;
+	  line-height: 1.5;
+		text-align: left;
+	}
+}
+
+@media (max-width: 1119px) {
+	#main-content{
+		width: 90%;
+	}
+	.content-wrap{
+		width: 90%;
+	}
+	h2.title{
+	  font-size: 5rem;
+	  line-height: 1.5;
+		text-align: left;
+	}
+	.profiles-members{
+		height: 100%;
+	}
+	.profiles-members li{
+		width: 50%;
+	}
+}
+
+@media (max-width: 520px) {
+	h2.title{
+	  font-size: 3rem;
+	  line-height: 1.5;
+		text-align: left;
+	}
+}

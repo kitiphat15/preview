@@ -1,0 +1,217 @@
+#main-content{
+	min-height: 100%
+}
+
+h2.title{
+	font-family: Aldo;
+	font-size: 8rem;
+  line-height: 2;
+  text-align: center;
+}
+
+nav ul li a.previous::before{
+  content: none;
+}
+
+.date-contain{
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+  display: block;
+}
+
+.date-list{
+  overflow: hidden;
+  margin: 5% 0;
+  padding: 0 0.5em;
+  line-height: 1;
+  background: #fff;
+  font-size: 2rem;
+  color: #000;
+  font-family: DIN;
+}
+
+.date-list li:first-child{
+  float: left;
+}
+
+.date-list li{
+  width: 25%;
+  text-align: center;
+}
+
+.date-list li:first-child a{
+  background: url(../svg/arrow-prev.svg) no-repeat left center;
+  background-size: 12px;
+}
+
+.date-list li p{
+  color: #000;
+  font-family: DIN;
+  font-size: 2rem;
+  margin-top: 5px;
+}
+
+.date-list li a, .date-list li span{
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.date-list li.month{
+  float: left;
+  width: 50%;
+  margin: 0 auto;
+  font-family: DIN;
+  font-size: 2rem;
+}
+
+.date-list li.month span{
+  color: #000;
+}
+
+.date-list li.next{
+  float: right;
+}
+
+.date-list li:last-child{
+  float: right;
+}
+
+.date-list li:last-child a{
+  background: url(../svg/arrow-next.svg) no-repeat right center;
+  background-size: 12px;
+}
+
+.list{
+  width: 100%;
+}
+
+.list dl{
+  display: table;
+  width: 100%;
+  padding: 1%;
+  background-color: #fff;
+  font-family: DIN;
+}
+
+.list dl dt{
+  display: table-cell;
+  word-wrap: break-word;
+  width: 10%;
+  padding: 1.5em;
+  background: #000;
+  vertical-align: middle;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  font-size: 20px;
+}
+
+.list dl dd{
+  display: table-cell;
+  width: 90%;
+  padding: 0 0 0 1em;
+}
+
+.list dl dd li:last-child{
+  border: none;
+}
+
+.list dl dd li{
+  padding: 0.5em 0;
+  border-bottom: 1px solid #fff;
+}
+
+.list dl dd ul li .details span{
+  display: inline-block;
+  margin: 0 6px 6px 0;
+  padding: 5px;
+  text-align: center;
+  vertical-align: baseline;
+  background-color: transparent;
+  white-space: nowrap;
+  font-size: 1rem;
+  border: 2px solid #000;
+  border-radius: 10px;
+  color: #000;
+}
+
+.toTop{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.8);
+	bottom: 40px;
+	right: 40px;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 22px;
+	transition: 0.4s;
+	z-index: 100;
+}
+
+.toTop:hover{
+	transform: scale(1.3);
+}
+
+.toTop span{
+	font-family: DIN;
+	font-size: 1rem;
+}
+
+@media (max-width: 1119px) {
+	.toTop{
+		transition: 0s;
+	}
+	.toTop:hover{
+		transform: scale(1);
+	}
+	.content-wrap{
+		width: 90% !important;
+	}
+}
+
+@media (max-width: 768px) {
+	h2.title{
+		font-size: 5rem;
+	}
+	.date-list{
+		font-size: 1.5rem;
+	}
+	.date-list li.month{
+		font-size: 1.5rem;
+	}
+	.schedule-content{
+		width: 100%;
+		margin: 0 auto;
+		padding: 3%;
+	}
+	.schedule-content dl dt{
+		width: 20%;
+		padding: 2em;
+	}
+	.schedule-content dl dd{
+		width: 80%;
+	}
+	.schedule-list dl dd li{
+		padding: 1em 0;
+	}
+	.schedule-contentdl dl dd li a{
+		padding: 0;
+		background: none;
+	}
+	.schedule-content al dd h3{
+		line-height: 1.5;
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 520px) {
+	.schedule-content dl dt{
+		padding: 2em 1em;
+		border-radius: 5px;
+	}
+}
